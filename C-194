@@ -1,0 +1,42 @@
+Last login: Sun Jan 30 14:02:15 on ttys000
+satish@Satishs-MacBook-Pro ~ % Nslookup www.facebook.com
+Server:		8.8.8.8
+Address:	8.8.8.8#53
+
+Non-authoritative answer:
+www.facebook.com	canonical name = star-mini.c10r.facebook.com.
+Name:	star-mini.c10r.facebook.com
+Address: 157.240.228.35
+
+satish@Satishs-MacBook-Pro ~ % Nslookup www.github.com
+Server:		8.8.8.8
+Address:	8.8.8.8#53
+
+Non-authoritative answer:
+www.github.com	canonical name = github.com.
+Name:	github.com
+Address: 13.234.176.102
+
+satish@Satishs-MacBook-Pro ~ % ping www.facebook.com
+PING star-mini.c10r.facebook.com (157.240.228.35): 56 data bytes
+64 bytes from 157.240.228.35: icmp_seq=0 ttl=57 time=8.837 ms
+64 bytes from 157.240.228.35: icmp_seq=1 ttl=57 time=11.291 ms
+64 bytes from 157.240.228.35: icmp_seq=2 ttl=57 time=10.054 ms
+64 bytes from 157.240.228.35: icmp_seq=3 ttl=57 time=10.548 ms
+çç64 bytes from 157.240.228.35: icmp_seq=4 ttl=57 time=8.901 ms
+64 bytes from 157.240.228.35: icmp_seq=5 ttl=57 time=9.928 ms
+^C
+--- star-mini.c10r.facebook.com ping statistics ---
+6 packets transmitted, 6 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 8.837/9.926/11.291/0.866 ms
+satish@Satishs-MacBook-Pro ~ % ping www.github.com
+PING github.com (13.234.176.102): 56 data bytes
+64 bytes from 13.234.176.102: icmp_seq=0 ttl=51 time=26.865 ms
+64 bytes from 13.234.176.102: icmp_seq=1 ttl=51 time=27.176 ms
+64 bytes from 13.234.176.102: icmp_seq=2 ttl=51 time=27.787 ms
+64 bytes from 13.234.176.102: icmp_seq=3 ttl=51 time=26.297 ms
+^C
+--- github.com ping statistics ---
+4 packets transmitted, 4 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 26.297/27.031/27.787/0.538 ms
+satish@Satishs-MacBook-Pro ~ % 
